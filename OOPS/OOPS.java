@@ -13,9 +13,41 @@ public class OOPS {
         // on.setPassword("qzwsedrf");
         // System.out.println(on.getUsername());
         // System.out.println(on.getPassword());
+        Student s1 = new Student();
+        // // Student s2 = new Student("Owais");
+        // // Student s3 = new Student("Mehsan", 39);
+        // s1.name="nitin";
+        // s1.rollNo=28;
+        // s2.rollNo=10;
+        // s3.marks[0]= 90;
+        // s3.marks[1]= 92;
+        // s3.marks[2]= 95;
+        // System.out.println(s1.name +" " + s1.rollNo);
+        // System.out.println(s2.name +" " + s2.rollNo);
+        // System.out.println(s3.name +" " + s3.rollNo);
+        // display(s3.name, s3.marks);  
+        // Student s4 = new Student(s3);
+        // s4.marks[0]=99;
+        // display(s4.name, s4.marks);
+        // display(s3.name, s3.marks);
+        
+        // createObject();
+
+
+        
+
+
+
+
 
     }
+    // public static void display(String name, int[] arr) {
+    //     for(int i =0; i<arr.length; i++) {
+    //         System.out.println( "naem is : "+name+" marks is = " + arr[i]);
+    //     }
+    // }
 }
+
 // // basic class and object and geter and seters
 // class Pen {
 //     private String color;
@@ -71,6 +103,39 @@ public class OOPS {
 class Student {
     String name;
     int rollNo;
+    // int marks[]= new int[3];
+    Student s5; 
+    // s5.name="s5";
+
+    Student() {
+        System.out.println("deault constructor is called..");
+    }
+    // Student(String name) {
+    //     this.name=name;
+    //     System.out.println("parametarizer constructor is called... which initilized the name ");
+    // }
+    // Student(String name, int rollNo) {
+    //     this.rollNo=rollNo;
+    //     this.name=name;
+    // }
+    // // Student(Student s) {
+    // //     this.name=s.name;
+    // //     this.marks=s.marks;
+    // //     this.rollNo=s.rollNo;
+    // // }
+    // Student(Student s) {
+    //     this.name=s.name;
+    //     this.rollNo=s.rollNo;
+        
+    //     for(int i = 0; i<s.marks.length; i++) {
+    //         this.marks[i]=s.marks[i];
+    //     }
+    // }
+    public void createObject() {
+        s5=new Student();
+    }
     
+
 }
+
 
