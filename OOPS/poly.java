@@ -1,8 +1,8 @@
 public class poly {
     public static void main(String [] args) {
         Deer d = new Deer();
-        Animal a= new Animal();
-        a.eat();
+        // Animal a= new Animal();
+        // a.eat();
         d.eat();
         
         // Calculate ab = new Calculate();
