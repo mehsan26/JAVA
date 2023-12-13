@@ -10,15 +10,14 @@ public class Abstraction {
         System.out.println(m.color); 
         Horse h = new Horse();
         Mm mm = new Mm();
-
     }
 }
 
 abstract class Animal {
-    String color = "brown";
+    String color ;
     Animal() {
         System.out.println("Animal class constructor is called...");
-        eat();
+        color = "brown";
     }
     void eat() {
         System.out.println("Animal eats");
