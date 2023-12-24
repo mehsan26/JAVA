@@ -61,12 +61,18 @@ public class BitManipulaion {
         //this method is done my teaher
 
     }
-    public static int converToBinary(int n) {
-        for(int i=n; i>0;i=i/2) {
-            int r= n%2;
-            int binaryNo=r;
-        }
-    }
+
+
+
+
+
+
+    // public static int converToBinary(int n) {
+    //     for(int i=n; i>0;i=i/2) {
+    //         int r= n%2;
+    //         int binaryNo=r;
+    //     }
+    // }
 }
 
 
