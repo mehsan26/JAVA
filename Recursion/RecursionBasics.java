@@ -8,7 +8,7 @@ class RecursionBasics {
         printDec(n-1);
     }
     public static void printInc(int n) {
-        if(n==1) {
+        if(n==0) {
             System.out.print(n);
             return;
         }
