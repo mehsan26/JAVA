@@ -33,14 +33,22 @@ class RecursionBasics {
         }
         return firstOccurence(arr,n,(i+1));
     }
-    public static void lastOcc(int arr[], int n, int i) {
-        
+    public static int lastOcc(int arr[], int n, int i) {
+        if(i<0) {
+            return -1;
+        }
+        if(arr[i]==n) { 
+            // System.out.print(i +" ");
+            // lastOcc(arr, n, i+1);
+            return i;
+        }
+        return lastOcc(arr, n, i-1);
     }
     public static void main(String args[]) {
         // printDec(10);
         // printInc(10);
-        int arr[]={1,27,33,24,59};
+        int arr[]={1, 2, 3, 4, 5, 5, 6, 5, 8, 0};
         // System.out.print(isSorted(arr, 0));
-        System.out.println(firstOccurence(arr, 24, 0));
+        System.out.println(lastOcc(arr, 5, (arr.length-1)));
     }
 }
