@@ -24,11 +24,23 @@ class RecursionBasics {
         }
         return isSorted(arr, i+1);
     }
+    public static int firstOccurence(int arr[], int n, int i) {
+        if(i>arr.length-1) {
+            return -1;
+        }
+        if(arr[i]==n) {
+            return i;
+        }
+        return firstOccurence(arr,n,(i+1));
+    }
+    public static void lastOcc(int arr[], int n, int i) {
+        
+    }
     public static void main(String args[]) {
         // printDec(10);
         // printInc(10);
-        int arr[]={1,2,3,4,5};
-        boolean a=isSorted(arr, 0);
-        System.out.print(a);
+        int arr[]={1,27,33,24,59};
+        // System.out.print(isSorted(arr, 0));
+        System.out.println(firstOccurence(arr, 24, 0));
     }
 }
