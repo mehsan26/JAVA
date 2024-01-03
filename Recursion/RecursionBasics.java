@@ -44,11 +44,29 @@ class RecursionBasics {
         }
         return lastOcc(arr, n, i-1);
     }
+    public static int pow(int n, int p) {
+        if(p==0) {
+            return 1;
+        }
+        return n*pow(n,p-1);
+    }
+    public static int powOpti(int a, int n) {
+        if(n == 0) {
+            return 1;
+        }
+        int halfPower = powOpti(a, n/2);
+        int halfPowersq = halfPower * halfPower;
+        if(n % 2 != 0) {
+            halfPowersq=a * halfPowersq;
+        }
+        return halfPowersq;
+    }
     public static void main(String args[]) {
         // printDec(10);
         // printInc(10);
-        int arr[]={1, 2, 3, 4, 5, 5, 6, 5, 8, 0};
+        // int arr[]={1, 2, 3, 4, 5, 5, 6, 5, 8, 0};
         // System.out.print(isSorted(arr, 0));
-        System.out.println(lastOcc(arr, 5, (arr.length-1)));
+        // System.out.println(lastOcc(arr, 5, (arr.length-1)));
+        System.out.println(powOpti(3,6));
     }
 }
